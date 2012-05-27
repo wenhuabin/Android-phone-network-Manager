@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="main_tittle">Netmanager</string>
+    <string name="app_name">Netmanager</string>
+    <string name="NetAcessControl_label">NetAcessControl</string>
+    <string name="Trafficstatistics_label">Trafficstatistics</string>
+    <string name="Exit_label">Exit</string>
+    <string name="About_label">About</string>
+    
+    <string name="about_title">About Android Netmanager</string>
+    <string name="about_text">\
+        version 1.0\n
+        Developed by Wenhuabin and Wudan.      
+	</string>
+	<string name="NetAC_title">Net Access Control</string>
+	<string name="app_text">Apps list</string>
+
+</resources>
