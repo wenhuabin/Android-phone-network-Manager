@@ -11,10 +11,10 @@
         android:label="@string/app_name" >
         <activity
             android:name=".NetmanagerActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:debuggable="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -24,12 +24,27 @@
             android:theme="@android:style/Theme.Dialog"></activity>
         <activity
             android:name=".NetAC"
-            android:label="@string/NetAC_title">
+            android:label="@string/NetAC_title" > 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.catetory.DEFAULT"/>
             </intent-filter>
         </activity>
+        <activity
+            android:name=".TrafficStat"
+            android:label="@string/TrafficStat_title" > 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.catetory.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        
+        <receiver 
+            android:name=".BootBroadcast">
+            <intent-filter>
+                 <action android:name="android.intent.action.BOOT_COMPLETED" />
+             </intent-filter>
+         </receiver>   
     </application>
-
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 </manifest>

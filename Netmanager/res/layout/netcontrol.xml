@@ -4,16 +4,33 @@
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:orientation="horizontal">
+  <CheckBox
+    android:id="@+id/select_wifi"
+    android:layout_width="34dip"
+    android:layout_height="34dip"/>
+  <CheckBox
+    android:id="@+id/select_3g"
+    android:layout_height="34dip"
+    android:layout_width="34dip"/>
   <ImageView
   	android:id="@+id/app_icon"
+  	android:layout_height="34dip"
+  	android:layout_width="34dip"/>
+  <TextView
+  	android:id="@+id/app_uid"
   	android:layout_width="wrap_content"
+  	android:textColor="@android:color/white"
+  	android:textSize="10sp"
   	android:layout_height="wrap_content"/>
   <TextView
   	android:id="@+id/app_name"
-  	android:layout_width="0dip"
+  	android:layout_width="fill_parent"
   	android:layout_weight="1"
+  	paddingLeft="2dip"
   	android:gravity="center"
   	android:textColor="@android:color/white"
   	android:textSize="20sp"
   	android:layout_height="wrap_content"/>	
+  
+  
 </LinearLayout>

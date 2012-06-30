@@ -1,20 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
-    <TextView  
-	    android:layout_width="match_parent" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:duplicateParentState="false">
+    <View android:layout_width="fill_parent"
+         android:layout_height="0.5px"
+         android:background="#FFFFFFFF" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:padding="10px">
+    	<TextView  
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content" 
+	    	android:text="@string/app_text"
+	   		android:textColor="@android:color/white"
+	   		android:textSize="25px"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+		android:background="#FFFFFFFF" />
+	<LinearLayout 
+	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
-	    android:text="@string/app_text"
-	    android:textColor="@android:color/white"
-	    android:textSize="24sp"/>
-    
-    <ListView
-    	android:id="@+id/mylist"
-    	android:layout_width="match_parent"
-    	android:layout_height="0dip"
-    	android:layout_weight="1"/>
+	    android:padding="0px">
+		<ImageView 
+		    android:layout_width="35dip" 
+		    android:layout_height="wrap_content" 
+		    android:id="@+id/img_wifi" 
+		    android:src="@drawable/eth_wifi" 
+		    android:clickable="false"></ImageView>
+		<ImageView 
+		    android:layout_width="35dip" 
+		    android:layout_height="wrap_content" 
+		    android:id="@+id/img_3g" 
+		    android:src="@drawable/eth_3g" 
+		    android:clickable="false"></ImageView>
+		
+	</LinearLayout>
+    	
+    	
+    	
+    	<ListView
+    		android:id="@+id/mylist"
+    		android:layout_width="match_parent"
+    		android:layout_height="0dip"
+    		android:layout_weight="30"/>
 
 </LinearLayout>

@@ -8,12 +8,29 @@
     <string name="Exit_label">Exit</string>
     <string name="About_label">About</string>
     
+    
     <string name="about_title">About Android Netmanager</string>
     <string name="about_text">\
         version 1.0\n
         Developed by Wenhuabin and Wudan.      
 	</string>
 	<string name="NetAC_title">Net Access Control</string>
-	<string name="app_text">Apps list</string>
+	<string name="app_text">Apps list(blacklist) </string>
+	<string name="text_wifi">wifi</string>
+	<string name="text_3g">3g</string>
+	<string name="apply_label">Apply</string>
+    <string name="clear_label">Clear</string>
+	<string name="toast_bin_installed">Binary files installed!</string>
+	
+	<string name="TrafficStat_title">Traffic statistics</string>
+	<string name="application_text">AppName</string>
+	<string name="refresh_label">Refresh</string>
+	<string name="save_label">Save</string>
+	<string name="TxBytes_text">U/Kb</string>
+	<string name="RxBytes_text">D/Kb</string>
+	<string name="ToBytes_text">T/Kb</string>
+	
+	
+	
 
 </resources>

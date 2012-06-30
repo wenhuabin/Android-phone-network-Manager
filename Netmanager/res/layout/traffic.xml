@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:duplicateParentState="false">
+    <View android:layout_width="fill_parent"
+         android:layout_height="0.5px"
+         android:background="#FFFFFFFF" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:padding="10px">
+    	<TextView  
+    	    android:id="@+id/application_save"
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content" 
+	    	android:text="@string/application_text"
+	   		android:textColor="@android:color/white"
+	   		android:textSize="25px"/>
+    	<TextView  
+    	    android:id="@+id/application_TBytes"
+	    	android:layout_width="40dp" 
+	    	android:layout_height="wrap_content"
+	    	android:gravity="center" 
+	    	android:text="@string/TxBytes_text"
+	   		android:textColor="@android:color/white"
+	   		android:textSize="24px"
+	   		android:layout_toLeftOf="@+id/application_RBytes"/>
+    	<TextView  
+    	    android:id="@+id/application_RBytes"
+	    	android:layout_width="40dp" 
+	    	android:layout_height="wrap_content" 
+	    	android:gravity="center"
+	    	android:text="@string/RxBytes_text"
+	   		android:textColor="@android:color/white"
+	   		android:textSize="24px"
+	   		android:layout_toLeftOf="@+id/application_TTBytes"/>
+    	<TextView  
+    	    android:id="@+id/application_TTBytes"
+	    	android:layout_width="40dp" 
+	    	android:layout_height="wrap_content" 
+	    	android:gravity="center"
+	    	android:text="@string/ToBytes_text"
+	   		android:textColor="@android:color/white"
+	   		android:textSize="24px"
+	   		android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    	
+    <ListView
+    	android:id="@+id/traffic_list"
+    	android:layout_width="match_parent"
+    	android:layout_height="0dip"
+    	android:layout_weight="30"/>
+    
+
+</LinearLayout>
